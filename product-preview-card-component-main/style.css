@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 600px;
+  border-radius: 10px;
+}
+.product figure {
+  width: 50%;
+}
+.product figure img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product figure .imgPhone {
+  display: none;
+}
+.product .productInfo {
+  width: 50%;
+  padding: 30px;
+}
+.product .productInfo .type {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.product .productInfo .name {
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.product .productInfo .text {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.product .productInfo .price {
+  font-family: "Fraunces", serif;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.product .productInfo .price .current {
+  margin-right: 20px;
+  color: hsl(158deg, 36%, 37%);
+}
+.product .productInfo .price .before {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.product .productInfo .add {
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  outline: none;
+  color: hsl(0deg, 0%, 100%);
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 14px;
+}
+.product .productInfo .add img {
+  margin-right: 10px;
+}
+.product .productInfo .add:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+
+@media only screen and (max-width: 400px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+  .product figure {
+    width: 100%;
+  }
+  .product figure .imgDesk {
+    display: none;
+  }
+  .product figure .imgPhone {
+    display: block;
+  }
+  .product figure img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .product .productInfo {
+    width: 100%;
+    padding: 20px;
+  }
+  .product .productInfo .type {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  .product .productInfo .name {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .product .productInfo .text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .product .productInfo .price {
+    margin-bottom: 10px;
+  }
+  .product .productInfo .price .current {
+    margin-right: 10px;
+  }
+  .product .productInfo .add {
+    padding: 15px 0;
+  }
+  .product .productInfo .add img {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
